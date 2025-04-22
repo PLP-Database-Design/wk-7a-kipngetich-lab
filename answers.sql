@@ -27,6 +27,7 @@ CREATE TABLE customers(
 --Creating orderDetails table with two foreign keys to link customers table and products table with order details table
 CREATE TABLE orderDetails(
     orderDetailsID INT AUTO_INCREMENT PRIMARY KEY,
+    OrderID INT,
     customerID INT,
     productID INT,
     quantity INT,
